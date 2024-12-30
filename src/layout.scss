@@ -1,0 +1,29 @@
+@use './responsive.scss' as responsive;
+
+.layout{
+    background-color: #e2d7d7;
+    height:100vh;
+    max-width:1366px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    @include responsive.ld {
+        background-color: #dcc5c5;
+        max-width: 1280px;
+    }
+    @include responsive.md {
+        background-color: #dcc5c5;
+        max-width: 768px;
+    }
+    @include responsive.sd {
+        background-color: #dcc5c5;
+        max-width: 640px;
+    }
+    
+    
+}
+
+
+
