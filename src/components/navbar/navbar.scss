@@ -48,6 +48,7 @@ nav{
         justify-content: flex-end;
         background-color: rgb(206, 233, 233);
         height: 100%;
+        z-index: 2;
         
         @include responsive.md{
             background-color: transparent;
