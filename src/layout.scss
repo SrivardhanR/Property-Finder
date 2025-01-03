@@ -1,7 +1,7 @@
 @use './responsive.scss' as responsive;
 
 .layout{
-    background-color: #e2d7d7;
+    background-color: rgb(240, 237, 237);
     height:100vh;
     max-width:1366px;
     margin-left: auto;
@@ -12,19 +12,19 @@
     flex-direction: column;
 
     @include responsive.ld {
-        background-color: #dcc5c5;
+        background-color: rgb(240, 237, 237);
         max-width: 1280px;
     }
     @include responsive.md {
-        background-color: #dcc5c5;
+        background-color: rgb(240, 237, 237);
         max-width: 768px;
     }
     @include responsive.sd {
-        background-color: #dcc5c5;
+        background-color: rgb(240, 237, 237);
         max-width: 640px;
     }
     .content{
-        background-color: rgb(238, 205, 205);
+        background-color: rgb(240, 237, 237);
         flex: 1;
     }  
 }
