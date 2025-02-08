@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./searchbar.scss";
+import { useNavigate } from "react-router-dom";
 
 const types = ["buy","rent"];
 
@@ -10,6 +11,11 @@ function SearchBar(){
         minPrice:0,
         maxPrice:0
     });
+    const navigate = useNavigate();
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate("/list"); 
+    };
     const switchType = (val) =>{
         setQuery((prev)=>({...prev,type:val}));
     }
@@ -27,7 +33,7 @@ function SearchBar(){
                 </button>
             ))}
         </div>
-        <form>
+        <form onSubmit={handleSubmit}>
             <input 
                 type = "text" 
                 name="location" 
@@ -47,7 +53,7 @@ function SearchBar(){
                 min = {0}
                 max = {10000000}
                 />
-            <button>
+            <button type="submit">
                 <img src = "./search.png" alt = ""/>
             </button>
         </form>
