@@ -1,19 +1,19 @@
 .listPage{
     display: flex;
     height:100%;
-    background-color: rgb(240, 240, 246);
+    // background-color: rgb(240, 240, 246);
     .listContainer{
         flex:3;
         height: 100%;
         .wrapper{
+            height: 100%;
             padding-right: 50px;
             display: flex;
             flex-direction: column;
             gap: 50px;
-            height: 100vh;
-            padding-bottom: 150px;
             overflow-y: scroll;
-        }
+            padding-bottom: 50px;
+          }
     }
     .mapContainer{
         flex:2;

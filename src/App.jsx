@@ -8,6 +8,7 @@ import {
   RouterProvider
 } from "react-router-dom";
 import SinglePage from "./routes/SinglePage/SinglePage";
+import ProfilePage from "./routes/profilePage/ProfilePage";
 
 
 function App() {
@@ -27,6 +28,10 @@ function App() {
         {
           path: "/:id",
           element: <SinglePage/>
+        },
+        {
+          path: "/profile",
+          element: <ProfilePage/>
         }
       ]
     },

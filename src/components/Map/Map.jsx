@@ -2,7 +2,7 @@ import "./map.scss";
 import { MapContainer, TileLayer ,Marker,Popup} from 'react-leaflet';
 import "leaflet/dist/leaflet.css";
 import Pin from "../Pin/Pin";
-const Map = ({items}) => {
+function Map({items}){
   return (
         <MapContainer center={[51.505, -0.09]} zoom={7} scrollWheelZoom={true} className="map">
             <TileLayer

@@ -3,6 +3,7 @@
     height:100%;
     .textContainer{
         flex:3;
+        // background-color: #fcf5f3;
         .wrapper{
             padding-right: 100px;
             display: flex;
@@ -13,6 +14,7 @@
             .title{
                 font-size: 64px;
             }
+            padding-right: 50px;
         }
 
         .boxes{
@@ -20,7 +22,7 @@
             justify-content: space-between;
 
             h1{
-                font-size: 36px;
+                font-size: 32px;
             }
             h2{
                 font-size: 24px;
@@ -30,7 +32,7 @@
     }
     .imgContainer{
         flex:2;
-        background-color: rgb(210, 224, 236);
+        background-color: #fcf5f3;
         position: relative;
         display: flex;
         align-items: center;
@@ -41,5 +43,6 @@
             position: absolute;
             right: 0;
         }
+        width: 105%;
     }
 }
