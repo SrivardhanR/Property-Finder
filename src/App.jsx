@@ -2,7 +2,7 @@ import "./routes/layout/layout.scss";
 import "./responsive.scss"
 import HomePage from "./routes/homepage/HomePage";
 import ListPage from "./routes/ListPage/ListPage";
-import Layout from "./routes/layout/layout";
+import Layout from "./routes/layout/Layout";
 import {
   createBrowserRouter,
   RouterProvider
