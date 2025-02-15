@@ -20,8 +20,8 @@ function SinglePage() {
                     <div className="price">{singlePostData.price}</div>
                   </div>
                   <div className="user">
-                    <img src = "./utility.png" alt=""/>
-                    <span>{singlePostData.name}Not Working</span>
+                    <img src = "./SmapleDp1.png" alt=""/>
+                    <span>{singlePostData.name}Srivardhan</span>
                   </div>
                 </div>
                 <div className="bottom">
