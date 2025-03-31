@@ -8,14 +8,14 @@ function Navbar(){
     return(
         <nav>
             <div className="left">
-                <a href="/" className="logo">
-                    <img src = "./logo.png" alt="/"/>
+                <Link to="/" className="logo">
+                    <img src="./logo.png" alt="Logo" />
                     <span>MCK Properties</span>
-                </a>
-                <a href="/list">Home</a>
-                <a href="/">About</a>
-                <a href="/">Contact</a>
-                <a href="/">Agents</a>
+                </Link>
+                <Link to="/list">Home</Link>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
+                <Link to="/agents">Agents</Link>
                 
             </div>
             <div className="right">
@@ -30,8 +30,8 @@ function Navbar(){
                 </div>
             ):(
                 <>
-                <a href="/profile">Sign in</a>
-                <a href="/signup" className="register">Sign Up</a>
+                <Link to="/profile">Sign In</Link>
+                <Link to="/signup" className="register">Sign Up</Link>
                 </>
             )}
             <div className="menuIcon">
