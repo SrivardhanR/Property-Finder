@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import SinglePage from "./routes/SinglePage/SinglePage";
 import ProfilePage from "./routes/profilePage/ProfilePage";
+import Login from "./routes/Login/Login";
 
 
 function App() {
@@ -32,6 +33,10 @@ function App() {
         {
           path: "/profile",
           element: <ProfilePage/>
+        },
+        {
+          path: "/signup",
+          element: <Login/>
         }
       ]
     },

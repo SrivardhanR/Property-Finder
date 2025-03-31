@@ -31,7 +31,7 @@ function Navbar(){
             ):(
                 <>
                 <a href="/profile">Sign in</a>
-                <a href="/" className="register">Sign Up</a>
+                <a href="/signup" className="register">Sign Up</a>
                 </>
             )}
             <div className="menuIcon">
